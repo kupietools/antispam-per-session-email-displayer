@@ -15,7 +15,7 @@ Then, if a spammer crawls my site and grabs my email address, instead of getting
 
 2. Obviously in this day and age you don't want to use a catchall email address (well, at least, I don't.) So you have to have some way of accepting all the various combinations of addresses this might generate, without leaving your email wide open with a catchall. I have a way of doing this for myself, but for security reasons, that one has to remain private. I would suggest, if you don't want to use a catchall, having some sort of filter that accepts any email addressed to one of the prefixes specified in the script from which it generates the first part of the script, which are specified in the user options section at top.
 
-# I AM
+# I am
 Michael E. Kupietz, software engineering, consulting, & support for FileMaker Pro, Full-Stack Web, Desktop OS, & TradingView platforms  
 https://kupietz.com (Business info)  
 https://github.com/kupietools (Free software)  
