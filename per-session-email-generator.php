@@ -65,6 +65,7 @@
  * 
  * Michael Kupietz
  * https://kupietz.com (business site)
+ * https://github.com/kupietools (free software)
  * https://michaelkupietz.com (art & creativity)
  *
  */
@@ -89,7 +90,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
 
-if (!isset($_SESSION['theEmail'])) //only run once per session
+if (!isset($_SESSION['theEmailx'])) //only run once per session
 
 {
 
@@ -120,7 +121,8 @@ else
 {  return $_SERVER['HTTP_USER_AGENT'];}
 }
 
-function getName($n) { 
+function getName($n,$wordArray) { 
+
  $theBrowserDetails="";
     foreach (getallheaders() as $name => $value) {
     $theBrowserDetails .= "$name: $value\n";
@@ -211,21 +213,13 @@ $current .= "------------------\n";
 
     return $theResult; 
 
-
 } 
 
 } //end func declartaions
- 
-
-
-   
 
 // Write the contents back to the file
 
-
-
-$theOutput=getName($n);
-
+$theOutput=getName($n,$wordArray);
 
   $_SESSION['theEmail'] = $theOutput;
 }
